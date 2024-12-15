@@ -26,7 +26,7 @@
         }
 
         h2{
-            margin-bottom: 2px;
+            margin-bottom: 5px;
             margin-top: 40px;
         }
         .g{
@@ -48,20 +48,103 @@
             border-radius: 16px;
             padding-left: 10px;
         }
+
+        .fn,.ln,.Email{
+            width: 100px;
+            height: 25px;
+            border-style: solid;
+            border-radius: 4px;
+            padding-left: 8px;
+            border-width: 1px;
+            border-color: rgba(0, 0, 0, 0.281);
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .Email{
+            width: 216px;
+            display: block;
+        }
+
+        .signup{
+            width: 227px;
+            height: 33px;
+            border: none;
+            background-color: rgb(26, 26, 180);
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .signup:hover{
+            background-color:rgb(10, 10, 123); ;
+        }
+
+        .ride{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            letter-spacing: -1px;
+            margin-bottom: 30px;
+        }
+
+        .location,.dest{
+            width: 450px;
+            height: 35px;
+            padding-left: 15px;
+            background-color:rgba(150, 142, 142, 0.242);
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .req,.sch{
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right:20px;
+            margin-right: 10px;
+            cursor: pointer;
+            margin-top: 25px;
+        }
+        .req{
+            background-color: black;
+            color: white;
+        }
+
+        .sch{
+            background-color: rgba(117, 103, 103, 0.365);
+            border-radius: 2px;
+        }
     </style>
 </html>
 <body>
-    <h2>8.a</h2>
+    <h2>8a</h2>
     <input type="text"  placeholder="Name"  class="name">
     <input type = "text"  placeholder="Email"  class="mail">
     
     
-    <h2>8.b</h2>
+    <h2>8b</h2>
     <p class="text">Thanks for chatting with our customer support. Would you like to take our quick survey?</p>
     <button class="yes">Yes</button>
     <button class="No">No</button>
 
-    <h2>8.c</h2>
+    <h2>8c</h2>
     <img class="google" src="thumbnails/image.png">
     <input type="text" class="search" placeholder="Search Google or type a URl">
+
+    <h2>8d</h2>
+    <input placeholder="First name" class="fn">
+    <input placeholder="Last name" class="ln">
+    <input placeholder="Email" class="Email">
+    <button class="signup">Sign up</button>
+
+    <h2>8e</h2>
+    <p class="ride">Request a ride now</p>
+    <input placeholder="Enter pickup location" class="location">
+    <input placeholder="Enter destination" class="dest">
+    <button class="req">Request now</button>
+    <button class="sch">Shedule for later</button>
 </body>
