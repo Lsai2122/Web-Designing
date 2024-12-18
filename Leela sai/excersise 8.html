@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>11</title>
+        <style>
+            p{
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin: 0;
+            }
+            .head{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                row-gap: 10px;
+                column-gap: 20px;
+                padding-bottom: 1000px;
+            }
+            .fb-grid{
+                display: grid;
+                grid-template-columns: 120px 120px 120px;
+                column-gap: 10px;
+            }
+            .a{
+                border: solid;
+                border-width: 2px;
+                border-color: rgba(128, 128, 128, 0.379);
+            }
+            .name{
+                font-size: 13px;
+                margin-top: 2px;
+                padding-left: 7px;
+                font-weight: bold;
+            }
+            .mutual{
+                display: grid;
+                grid-template-columns: 26px 1fr;
+            }
+            .mut-pic{
+                margin-left: 6px;
+                width: 76.92307692%;
+                border-radius: 70%;
+                margin-top: 2px;
+            }
+            .mut-num{
+                font-size: 8px;
+                padding-left: 6px;
+                padding-top: 5px;
+                color: gray;
+            }
+            .add{
+                font-size: 8px;
+                color: white;
+                background-color: rgb(43, 105, 220);
+                border: none;
+                margin-left: 6px;
+                margin-bottom: 6px;
+                padding-left: 8px;
+                padding-right: 8px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border-radius: 3px;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <div style="background-color: lightpink;">col 1</div>
+            <div style="background-color: lightpink;">col 2</div>
+            <div style="background-color: lightpink;">col 3</div>
+            <div style="background-color: lightpink;">col 1</div>
+            <div style="background-color: lightpink;">col 2</div>
+            <div style="background-color: lightpink;">col 3</div>
+        </div>
+        <div class="fb-grid">
+            <div class="a">
+                <img src="photos/photo 1.jpg" style="width: 100%;">
+                <div class="info">
+                    <p class="name">oliver</p>
+                    <div class="mutual">
+                        <img src="photos/photo 3.jpg" class="mut-pic">
+                       <p class="mut-num">2 mutual friends</p>
+                    </div>
+                    <button class="add">Add Friend</button>
+                    
+                </div>
+            </div>
+            <div class="a">
+                <img src="photos/photo 2.jpg" style="width: 100%;">
+                <div class="info">
+                    <p class="name">oliver</p>
+                    <div class="mutual">
+                        <img src="photos/photo 3.jpg" class="mut-pic">
+                       <p class="mut-num">2 mutual friends</p>
+                    </div>
+                    <button class="add">Add Friend</button>
+                    
+                </div>
+            </div>
+            <div class="a">
+                <img src="photos/photo 3.jpg" style="width: 100%;">
+                <div class="info">
+                    <p class="name">oliver</p>
+                    <div class="mutual">
+                        <img src="photos/photo 3.jpg" class="mut-pic">
+                       <p class="mut-num">2 mutual friends</p>
+                    </div>
+                    <button class="add">Add Friend</button>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
