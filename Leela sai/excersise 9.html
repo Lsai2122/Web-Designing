@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Flex practice</title>
+        <style>
+            p{
+                margin: 0;
+                font-family: Roboto;
+            }
+            div{
+                font-family: Roboto;
+            }
+            .a {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 20px;
+            }
+            .b {
+                display: flex;
+                flex-direction: row;
+                justify-content:space-around;
+            }
+            .e{
+                margin-top: 20px;
+                border: solid;
+                border-color: rgba(128, 128, 128, 0.344);
+                border-width: 2px;
+                border-radius: 4px;
+            }
+            .e1{
+                margin-top: 3px;
+                margin-bottom: 2px;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                justify-content:space-between;
+            }
+            .info{
+                margin-bottom: 5px;
+                width: 100px;
+                margin-left: 15px;
+                margin-top: 3px;
+            }
+            .no{
+                margin-bottom: 5px;
+                margin-right: 15px;
+                margin-top: 3px;
+            }
+            .no1{
+                color: white;
+                background-color: rgb(29, 108, 206);
+                padding-left: 9px;
+                padding-right: 9px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                border-radius: 12px;
+            }
+            .g1{
+                align-items: center;
+                margin-top: 30px;
+                display: flex;
+                flex-direction: row;
+            }
+            .pic{
+                width: 60px;
+            }
+            .pica{
+                width: 60px;
+                border-radius: 50%;
+            }
+            .info{
+                flex: 1;
+            }
+            .butt{
+                font-size: medium;
+                color: white;
+                background-color: rgb(25, 110, 230);
+                border: none;
+                padding-left: 14px;
+                padding-right: 14px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-radius: 4px;
+            }
+
+            .f{
+                justify-content: space-between;
+                height: 50px;
+                align-items: center;
+                display: flex;
+                flex-direction: row;
+                background-color:rgb(82, 8, 151);
+            }
+            .search{
+                border: none;
+                height: 25px;
+                border-radius: 12.5px;
+                width: 80%;
+                padding-left: 10px;
+            }
+            .down{
+                background-color: rgba(245, 222, 179, 0);
+                color: white;
+                border: solid;
+                border-color: white;
+                border-width: 1px;
+                padding-left: 14px;
+                padding-right: 14px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                border-radius: 3px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="a">
+            <div style="
+                    background-color: lightblue;
+                    width:200px;
+                ">200px</div>
+            <div style="
+                    background-color:lightpink;
+                    width:75px;
+                ">75px</div>
+        </div>
+
+        <div class="b">
+            <div style="background-color: lightblue;
+                width:50px;">item1</div>
+            <div style="background-color: lightpink;
+                flex:1;">item2</div>
+            <div style="background-color: lightblue;
+                width:75px;">item3</div>
+        </div>
+
+        <div class="e">
+            <div class="e1">
+                <div class="info">Home</div>
+                <div class="no"><p class="no1">14</p></div>
+            </div>
+            <div class="e1">
+                <div class="info">Notifications</div>
+                <div class="no"><p class="no1">3</p></div>
+            </div>
+            <div class="e1">
+                <div class="info">Messages</div>
+                <div class="no"><p class="no1">5</p></div>
+            </div>
+        </div>
+
+        <div class="g">
+            <div class="g1">
+                <div class="pic"><img src="photos/photo 1.jpg" class="pica"></div>
+                <div class="info">
+                    <p style="font-weight: bold;">oliver</p>
+                    <p style="color: gray; margin-top:2px;">the cat</p>
+                    <p style="color:gray;margin-top:2px;">Popular</p>
+                </div>
+                <div class="follow">
+                    <button class="butt">Follow</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="f">
+            <div style="color: white; margin-left:10px;width:100px">Home</div>
+            <div style="flex: 1;"><input type="text" placeholder="Search" class="search"></div>
+            <div style="width: 100px;"><button class="down">Download</button></div>
+        </div>
+    </body>
+
+</html>
