@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>21 Game</title>
+        <style>
+            .header{
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+                height: 50px;
+                background-color: rgb(255, 25, 0);
+            }
+
+            .side-bar{
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 40px;
+                background-color: rgb(255, 25, 0);
+            }
+            .play{
+                position: absolute;
+                top: 70px;
+                left: 8px;
+                background-color: rgb(255, 25, 0);
+                border: none;
+                border-radius: 3px;
+                transition: background-color 0.2s;
+            }
+            .play:hover{
+                background-color: rgb(213, 7, 0);
+            }
+            .play:active{
+                border: none;
+                background-color: rgb(255, 0, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo"></div>
+            <div class="past-data"></div>
+            <div class="money"></div>
+            <div class="players"></div>
+        </header>
+        <div class="side-bar">
+            <div class="pause/play"><button class="play">P</button></div>
+            <div class="palyerss"></div>
+        </div>
+    </body>
+</html>

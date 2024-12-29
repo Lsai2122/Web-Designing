@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Amazon
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/amazon-ember');
+            body{
+                font-family: 'Amazon Ember', sans-serif;
+            }
+            .header{
+                color: white;
+                display: flex;
+                background-color: rgb(19,25,33);
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 60px;
+                align-items:center;
+                justify-content: space-between;
+            }
+
+
+            .logodiv{
+                position: relative;
+                height: 50px;
+            }
+            .in{
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 15px
+            }
+            .logo{
+                width: 115.725px;
+                padding-right: 13px;
+            }
+
+
+            .address{
+                width: 200px;
+                display: flex;
+                height: 50px;
+            }
+            .addpicdiv{
+                width: 30px;
+                margin-right: -4px;
+            }
+            .addpic{
+                width: 100%;
+                margin-bottom: -25px;
+            }
+
+            .adddiv{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 1fr;
+            }
+            .add{
+                font-size: 12px;
+                color: #ccc;;
+            }
+            .update{
+                font-weight: bold;
+                font-size: 14px;
+                color: white;
+            }
+
+
+            .search{
+                width: 1fr;
+                display: flex;
+                justify-content: space-around;
+            }
+            .catsearch{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: rgb(230,230,230);
+                color: rgb(15,17,17);
+                font-weight: 300;
+                border: solid 1px;
+                width: 45px;
+                padding-left: 5px;
+                padding-right: 5px;
+                font-size: 13px;
+                height: 38px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logodiv">
+                <img src="Pics/Logo.png" class="logo">
+                <p class="in">.in</p>
+            </div>
+            <div class="address">
+                <div class="addpicdiv">
+                    <img src="Pics/add pin.png" class="addpic">
+                </div>
+                <div class="adddiv">
+                    <div class="add">Delivering to Current location</div>
+                    <div class="update">Update location</div>
+                </div>
+            </div>
+            <div class="searchdiv">
+                <div class="catsearch">All  &#x25BC</div>
+                <div class="search"></div>
+                <div class="searchbutt"></div>
+                
+            </div>
+        </header>
+    </body>
+</html>
