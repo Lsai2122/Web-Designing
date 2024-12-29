@@ -1,0 +1,177 @@
+.header{
+    color: white;
+    display: flex;
+    
+    background-color: rgb(19,25,33);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    align-items:center;
+}
+
+
+.logodiv{
+    position: relative;
+    height: 50px;
+    margin-right: 15px;
+}
+.in{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px
+}
+.logo{
+    width: 115.725px;
+    padding-right: 13px;
+}
+
+
+.address{
+    padding-right: 9px;
+    padding-left: 9px;
+    margin-right: 2px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+}
+.addpicdiv{
+    position: absolute;
+    left: 0px;
+    width: 30px;
+    margin-right: -4px;
+}
+.addpic{
+    width: 100%;
+    margin-bottom: -13px;
+}
+
+.adddiv{
+    flex: 1;
+    vertical-align: middle;
+    position: absolute;
+    left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1fr;
+}
+.add{
+    font-size: 12px;
+    color: #ccc;;
+}
+.update{
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+}
+
+
+.searchdiv{
+    margin-left: 14px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    padding-right: 30px;
+}
+.catsearch{
+    color: rgb(15,17,17);
+    background-color: rgb(230,230,230);
+    font-weight: 300;
+    font-size: 13px;
+    padding: 0 5px 0 5px;
+    height: 40px;
+    width: 45px;
+    border: none;
+    border-right: solid 0.5px rgba(128, 128, 128, 0.326);
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+.ddat{
+    position: absolute;
+    left: 12px;
+}
+.dda{
+    position: absolute;
+    width: 10px;
+    opacity: 0.7;
+    right: 12px;
+}
+
+.search{
+    flex: 1;
+}
+.searchb{
+    border: none;
+    width: 100%;
+    height: 38px;
+    font-weight: 500;
+    font-family: inherit;
+    font-size: 15px;
+    padding-left: 10px;
+
+}
+
+.searchbutt{
+    width: 30px;
+    height: 40px;
+}
+.butt{
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    height: 100%;
+    width: 45px;
+    background-color: rgb(254,189,105);
+    
+}
+.img{
+    margin-top: 5px;
+    height: 60%;
+}
+
+
+.country{
+    margin-left: 15px;
+    margin-right: 20px;
+    position: relative;
+    width: 70px;
+    height: 40px;
+}
+.flag{
+    position: absolute;
+    height: 58%;
+    bottom: 3px;
+    left: 0;
+}
+.cunna{
+    position: absolute;
+    bottom: 4px;
+    left: 27px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Amazon Ember';
+}
+.cdda{
+    height: 20px;
+    width: 10px;
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+}
+.cddaa{
+    height: 45%;
+    opacity: 0.8;
+    color: gray;
+    margin-top: 8px;
+}
