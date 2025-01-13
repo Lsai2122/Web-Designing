@@ -1,2 +1,2 @@
 let status = true;
-document.querySelector(".player-cards") = "a"
+document.querySelector(".player-css").innerHTML = "a"
