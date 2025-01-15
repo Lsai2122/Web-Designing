@@ -1,8 +1,6 @@
 .main-header {
     display: flex;
     flex-direction: column;
-    right: 0;
-    left: 0;
 }
 .header1 {
     display: flex;
