@@ -1,61 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>assignment</title>
-    <style>
-        table, th, td {
-            border:1px solid black;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
 </head>
-<body>
-
-    <table align="center">
-        <caption style="color: red;
-        font-size: 18px;">3-Day Workshop on XML &XSL</caption>
+<body bgcolor="#00FFFF">
+    
+    <table border="1" width="50%">
         <tr>
-            <th rowspan="3">Day</th>
-            <th colspan="3">Seminar</th>
+            <th><h1>Student Registration Form</h1></th>
         </tr>
-        <tr>
-            <th colspan="2">Schedule</th>
-            <th rowspan="2">Topic</th>
-        </tr>
-        <tr>
-            <th>Begin</th>
-            <th>End</th>
-        </tr>
-        <tr>
-            <td rowspan="2">Monday</td>
-            <td rowspan="2" bgcolor= "#ffffcd">8:00 a.m.</td>
-            <td rowspan="2" bgcolor= "#ccccfe">5:00 p.m.</td>
-            <td align="center">Introduction to XML</td>
-        </tr>
-        <tr>
-            <td align="center">Validity: DTD and Relax NG</td>
-        </tr>
-        <tr>
-            <td rowspan="3">Tuesday</td>
-            <td bgcolor= "#ffffcd">8:00 a.m.</td>
-            <td bgcolor= "#cefdcb">11:00 a.m.</td>
-            <td rowspan="2" align="center">XPath</td>
-        </tr>
-        <tr>
-            <td bgcolor= "#ffffcd">11:00 a.m.</td>
-            <td bgcolor= "#cefdcb">2:00 p.m.</td>
-            
-        </tr>
-        <tr>
-            <td bgcolor= "#cefdcb">2:00 p.m.</td>
-            <td bgcolor= "#ccccfe">5:00 p.m.</td>
-            <td align="center">XSL Transformations</td>
-        </tr>
-        <tr>
-            <td>Wednesday</td>
-            <td bgcolor= "#ffffcd">8:00 a.m.</td>
-            <td bgcolor= "#cefdcb">12:00 p.m.</td>
-            <td align="center">XSL Formatting Objects</td>
-        </tr>
-    </table>
+    </table> 
+    <br>
+    <form>
+        <table width="650px" height="350px">
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="username" id="name" placeholder="Enter full name">
+                </td>
+            </tr>
+                <td>
+                    <label for="Father-name">Father's Name: </label>
+                </td>
+                <td>
+                    <input type="text" name="user's-Father-name" id="Father-name">
+                </td>
+            <tr>
+                <td>
+                    <label for="Mother-name">Mother's Name: </label>
+                </td>
+                <td>
+                    <input type="text" name="user-mother-name" id="Mother-name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone-number">Phone Number: </label>
+                </td>
+                <td>
+                    <input type="tel" name="user-phone-number" id="phone-number" placeholder="091XXXXXXX">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email: </label>
+                </td>
+                <td>
+                    <input type="email" name="mail" id="Email" placeholder="sample@example.com">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender: </label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Date Of Birth: </label>
+                </td>
+                <td>
+                    <input type="tel" name="date" id="date" size="2">
+                    <label>-</label>
+                    <input type="tel" name="month" id="month" size="2">
+                    <label>-</label>
+                    <input type="tel" name="year" id="year" size="3">
+                    <i>(dd-mm-yyyy)</i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">address: </label>
+                </td>
+                <td>
+                    <input type="text" name="address" id="address" placeholder="Street:- House:- Road:-" size="36">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Blood-group">Blood Group: </label>
+                </td>
+                <td>
+                    <select name="Blood-group" id="Blood-group">
+                        <option value="select">Select</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="deparment">deparment:</label>
+                </td>
+                <td>
+                    <input type="radio" name="deparment" id="CSE">
+                    <label for="CSE">CSE</label>
+                    <input type="radio" name="deparment" id="EEE">
+                    <label for="EEE">EEE</label>
+                    <input type="radio" name="deparment" id="BBA">
+                    <label for="BBA">BBA</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="course">Course: </label>
+                </td>
+                <td>
+                    <input type="checkbox" name="course" id="C">
+                    <label for="C">C</label>
+                    <input type="checkbox" name="course" id="C++">
+                    <label for="C++">C++</label>
+                    <input type="checkbox" name="course" id="Java">
+                    <label for="Java">Java</label>
+                    <input type="checkbox" name="course" id="AI">
+                    <label for="AI">AI</label>
+                    <input type="checkbox" name="course" id="Machine Learning">
+                    <label for="Machine-Learning">Machine Learning</label>
+                    <input type="checkbox" name="course" id="Robotics">
+                    <label for="Robotics">Robotics</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Photo">Photo: </label>
+                </td>
+                <td>
+                    <input type="file" name="photo" id="user-photo">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br><br>
+    <a href="http://codechef.com">Submit</a>
+    <input type="reset" value="reset">
 </body>
 </html>
