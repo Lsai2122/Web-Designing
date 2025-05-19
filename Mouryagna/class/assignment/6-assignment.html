@@ -127,7 +127,7 @@
             }
         }
         function checkEmail(inputMail) {
-            if(inputMail.indexOf('@')==-1 || inputMail.indexOf('.')==-1) {
+            if(inputMail.indexOf('@')==-1 && inputMail.indexOf('.')==-1) {
                 return "* Invaild Email";
             }
             else {
